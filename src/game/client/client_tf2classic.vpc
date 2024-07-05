@@ -9,6 +9,7 @@ $Macro GAMENAME 	"tf2classic" [!$SOURCESDK]
 $Macro GAMENAME 	"tf2classic" [$SOURCESDK]
 
 $Include "$SRCDIR\game\client\client_base.vpc"
+$Include "$SRCDIR\coplay\src\coplay.vpc"
 
 $Configuration
 {

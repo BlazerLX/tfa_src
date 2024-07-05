@@ -119,6 +119,7 @@ static void WriteAchievementGlobalState( KeyValues *pKV, bool bPersistToSteamClo
 
     if ( bPersistToSteamCloud )
     {
+/*
 #ifndef NO_STEAM
 		if ( IsX360() )
         {
@@ -132,46 +133,47 @@ static void WriteAchievementGlobalState( KeyValues *pKV, bool bPersistToSteamClo
         ISteamRemoteStorage *pRemoteStorage = SteamClient()?(ISteamRemoteStorage *)SteamClient()->GetISteamGenericInterface(
             SteamAPI_GetHSteamUser(), SteamAPI_GetHSteamPipe(), STEAMREMOTESTORAGE_INTERFACE_VERSION ):NULL;
 
-        if (pRemoteStorage)
-        {
-            int32 availableBytes = 0;
-            int32 totalBytes = 0;
-            if ( pRemoteStorage->GetQuota( &totalBytes, &availableBytes ) )
-            {
-                if ( totalBytes > 0 )
-                {
-                    int32   filesize = (int32)filesystem->Size(szFilename);
+		if (pRemoteStorage)
+		{
+			uint64 availableBytes = 0;
+			uint64 totalBytes = 0;
+			if (pRemoteStorage->GetQuota(&totalBytes, &availableBytes))
+			{
+				if (totalBytes > 0)
+				{
+					int32   filesize = (int32)filesystem->Size(szFilename);
 
-                    if (filesize > 0)
-                    {
-                        char*   pData = new char[filesize];
+					if (filesize > 0)
+					{
+						char* pData = new char[filesize];
 
-                        if (pData)
-                        {
-                            // Read in the data from the file system GameState.txt file
-                            FileHandle_t    handle = filesystem->Open(szFilename, "r");
+						if (pData)
+						{
+							// Read in the data from the file system GameState.txt file
+							FileHandle_t    handle = filesystem->Open(szFilename, "r");
 
-                            if (handle)
-                            {
-                                int32 nRead = filesystem->Read(pData, filesize, handle);
+							if (handle)
+							{
+								int32 nRead = filesystem->Read(pData, filesize, handle);
 
-                                filesystem->Close(handle);
+								filesystem->Close(handle);
 
-                                if (nRead == filesize)
-                                {
-                                    // Write out the data to steam cloud
-                                    pRemoteStorage->FileWrite(szFilename, pData, filesize);
-                                }
-                            }
+								if (nRead == filesize)
+								{
+									// Write out the data to steam cloud
+									pRemoteStorage->FileWrite(szFilename, pData, filesize);
+								}
+							}
 
-                            // Delete the data array
-                            delete []pData;
-                        }
-                    }
-                }
-            }
-        }
-#endif
+							// Delete the data array
+							delete[]pData;
+						}
+					}
+				}
+			}
+		}
+#endif 
+*/
     }
 
     //=============================================================================

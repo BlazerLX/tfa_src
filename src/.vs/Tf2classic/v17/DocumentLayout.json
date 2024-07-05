@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\sdk2013\\tfa_src\\src\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E16DE0AE-52EE-30C7-D5D9-08479AA5D184}|game\\client\\client_tf2classic.vcxproj|C:\\sdk2013\\tfa_src\\src\\game\\shared\\achievementmgr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E16DE0AE-52EE-30C7-D5D9-08479AA5D184}|game\\client\\client_tf2classic.vcxproj|solutionrelative:game\\shared\\achievementmgr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "achievementmgr.cpp",
+              "DocumentMoniker": "C:\\sdk2013\\tfa_src\\src\\game\\shared\\achievementmgr.cpp",
+              "RelativeDocumentMoniker": "game\\shared\\achievementmgr.cpp",
+              "ToolTip": "C:\\sdk2013\\tfa_src\\src\\game\\shared\\achievementmgr.cpp",
+              "RelativeToolTip": "game\\shared\\achievementmgr.cpp",
+              "ViewState": "AQIAAJUAAAAAAAAAAAAewK0AAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-05T07:39:46.73Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
